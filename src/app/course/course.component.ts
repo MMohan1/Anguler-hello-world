@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-
+       title = "List of Courses";
+       imagePath = "http://lorempixel.com/400/200"
   constructor() { }
 
   ngOnInit() {
