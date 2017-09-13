@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CourseComponent implements OnInit {
        title = "List of Courses";
        imagePath = "http://lorempixel.com/400/200"
+       isActive=true;
   constructor() { }
 
   ngOnInit() {
