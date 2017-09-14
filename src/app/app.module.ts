@@ -5,6 +5,7 @@ import { CoursesService } from './courses.service';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './course.component';
 import { CourseComponent } from './course/course.component';
+import { SummaryPipe } from './course/summary.pipe';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 
@@ -13,7 +14,8 @@ import { AuthorsService } from './authors.service';
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    SummaryPipe
   ],
   imports: [
     BrowserModule,

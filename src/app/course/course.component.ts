@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-       title = "List of Courses";
+       title = "This is tile and we want to make it summarize so making a custom pipe";
        email="";
        imagePath = "http://lorempixel.com/400/200"
        isActive=true;
