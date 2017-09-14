@@ -2,5 +2,6 @@
   course works!
 </p>
 <h2>{{title}}</h2>
-<img src="{{imagePath}}" />
 <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor]="isActive ? 'blue':'white'" >Bootstrap</button>
+<button  (click)="onSave($event)">Event Binding</button>
+<input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>

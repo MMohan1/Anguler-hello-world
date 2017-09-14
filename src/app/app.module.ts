@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CoursesService } from './courses.service';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './course.component';
@@ -15,7 +16,8 @@ import { AuthorsService } from './authors.service';
     AuthorsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
   CoursesService,
