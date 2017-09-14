@@ -5,3 +5,5 @@
 <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor]="isActive ? 'blue':'white'" >Bootstrap</button>
 <button  (click)="onSave($event)">Event Binding</button>
 <input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>
+<span (click)= "onSpanClick()" [class]="startClass"></span>
+<span (click)= "onSpanClick()" class="glyphicon" [class.glyphicon-star-empty]="isStartClicked" [class.glyphicon-star]="!isStartClicked"></span>
