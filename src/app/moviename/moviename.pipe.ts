@@ -14,7 +14,7 @@ export class TitleCase implements PipeTransform {
         let words = input.split(" ");
         let out_str = "";
         for (var i=0 ; i<words.length; i++){
-            if (prepositions.includes(words[i]) && i !=0 ){
+            if (prepositions.includes(words[i].toLowerCase()) && i !=0 ){
                words[i] = words[i].toLowerCase() + " "
             }
             else {
