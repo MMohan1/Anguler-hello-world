@@ -8,6 +8,8 @@ import { CourseComponent } from './course/course.component';
 import { SummaryPipe } from './course/summary.pipe';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
+import { MovienameComponent } from './moviename/moviename.component';
+import { TitleCase } from './moviename/moviename.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AuthorsService } from './authors.service';
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
-    SummaryPipe
+    SummaryPipe,
+    MovienameComponent,
+    TitleCase
   ],
   imports: [
     BrowserModule,
