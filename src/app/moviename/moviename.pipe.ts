@@ -7,10 +7,6 @@ import {Pipe, PipeTransform} from '@angular/core';
 @Pipe({name: 'moviename'})
 export class TitleCase implements PipeTransform {
     transform(input:string, length: number){
-       let prepositions = ["of",
-        "the",
-        "is"
-        ];
         let words = input.split(" ");
         for (var i=0 ; i<words.length; i++){
             let word = words[i];
