@@ -8,22 +8,19 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class TitleCase implements PipeTransform {
     transform(input:string, length: number){
        let prepositions = ["of",
-        "the"
+        "the",
+        "is"
         ];
         let words = input.split(" ");
         let out_str = "";
         for (var i=0 ; i<words.length; i++){
-            if (i == 0 && prepositions.includes(words[i]))
-               out_str += words[i].toLowerCase() + " "
-            else {
-                 if (prepositions.includes(words[i])){
-                 out_str += words[i].toLowerCase() + " "
-                 }
-                 else {
-                 out_str += words[i][0].toUpperCase() + words[i].substr(1).toLowerCase() + " "
+            if (prepositions.includes(words[i]) && i !=0 ){
+               words[i] = words[i].toLowerCase() + " "
             }
+            else {
+              words[i] = words[i][0].toUpperCase() + words[i].substr(1).toLowerCase() + " "
             }
         }
-       return out_str
+       return words.join(" ")
     }
 }
